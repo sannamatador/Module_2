@@ -25,7 +25,7 @@ a = int(input())
 if a<3 or a>20:
     print('Введено неверное число')
 for i in range(1, math.ceil(a/2)):
-    for j in range(1, a):
+    for j in range(2, a):
         if i != j:
             if (i+j) % a == 0 or a % (i+j) == 0:
                 print(i, j, end=" ")
