@@ -28,5 +28,5 @@ if a < 3 or a > 20:
     sys.exit()
 for i in range(1, math.ceil(a / 2)):
     for j in range(i+1, a):
-        if i != j and ((i + j) % a == 0 or a % (i + j) == 0):
+        if ((i + j) % a == 0 or a % (i + j) == 0):
             print(i, j, end=" ")
